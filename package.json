@@ -1,0 +1,28 @@
+{
+  "name": "chai-code",
+  "version": "1.0.0",
+  "description": "javascript from chai and code youtube channel",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "node --watch src/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/saloni2823/chai-code.git"
+  },
+  "keywords": [
+    "javascript",
+    "learning",
+    "chai",
+    "code"
+  ],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/saloni2823/chai-code/issues"
+  },
+  "homepage": "https://github.com/saloni2823/chai-code#readme"
+}
