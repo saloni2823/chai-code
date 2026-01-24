@@ -281,4 +281,6 @@ console.log(false + true); // 1 because false is converted to 0 and true to 1, t
 console.log(false - true); // -1 because false is converted to 0 and true to 1, then subtraction is performed
 console.log(null + 1); // 1 because null is converted to 0 and then addition is performed
 console.log(undefined + 1); // NaN because undefined is converted to NaN and then addition is performed                 
-//types of 
+//types of data types in js
+//number
+//bigint
