@@ -282,4 +282,16 @@ console.log(false - true); // -1 because false is converted to 0 and true to 1, 
 console.log(null + 1); // 1 because null is converted to 0 and then addition is performed
 console.log(undefined + 1); // NaN because undefined is converted to NaN and then addition is performed                 
 //types of data types in js
-//p
+//primitive data types:
+//1. number
+//2. bigint
+//3. string
+//4. boolean
+//5. null
+//6. undefined
+//7. symbol
+
+//non-primitive data types:
+//1. object
+//object types:
+//1. object literal 
