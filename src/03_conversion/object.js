@@ -294,4 +294,13 @@ console.log(undefined + 1); // NaN because undefined is converted to NaN and the
 //non-primitive data types:
 //1. object
 //object types:
-//1. object literal 
+//1. object literal {}
+//2. array []
+//3. function function(){}
+//4. date new Date()
+//5. regex /ab+c/
+//6. map new Map()
+//7. set new Set()
+//8. weakmap new WeakMap()
+//9. weakset new WeakSet()
+console.log(2+2==4)// it will show true because 2+2=4 and then 4==4 is true
