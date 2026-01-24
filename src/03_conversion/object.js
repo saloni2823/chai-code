@@ -265,3 +265,4 @@ console.log(Boolean(false))// false
 //Falsy values in JavaScript include 0, "", null, undefined, NaN, and false
 //Truthy values in JavaScript include all values that are not falsy 
 //Understanding operators and type coercion is important for writing correct and efficient JavaScript code
+///I
