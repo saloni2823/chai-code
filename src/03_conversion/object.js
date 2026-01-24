@@ -266,3 +266,8 @@ console.log(Boolean(false))// false
 //Truthy values in JavaScript include all values that are not falsy 
 //Understanding operators and type coercion is important for writing correct and efficient JavaScript code
 ///Intefview Question: What will be the output of the following code snippets?
+console.log(0.1 + 0.2 == 0.3); // false due to floating-point precision issues
+console.log([] + []); // "" (empty string) because both arrays are converted to strings and concatenated
+console.log([] + {}); // "[object Object]" because the empty array is converted to an empty string and the object to "[object Object]"
+console.log({} + []); // 0 because the empty object is treated as a block and the empty array is converted to 0
+console.log("5" - 2); // 3 because the string "5" is converted to number 5 and then subtraction is performed
