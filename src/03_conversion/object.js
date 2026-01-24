@@ -304,3 +304,5 @@ console.log(undefined + 1); // NaN because undefined is converted to NaN and the
 //8. weakmap new WeakMap()
 //9. weakset new WeakSet()
 console.log(2+2==4)// it will show true because 2+2=4 and then 4==4 is true
+console.log(2+2===4)// it will show true because 2+2=4 and then 4===4 is true
+console.log(2+2=="4")// it will show true because 2+2=4 and then 4=="4" is true (string is converted to number)
