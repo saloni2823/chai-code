@@ -284,3 +284,9 @@ console.log(undefined + 1); // NaN because undefined is converted to NaN and the
 //types of data types in js
 //number
 //bigint
+//string
+//boolean
+//null
+//undefined
+//symbol
+//objec
