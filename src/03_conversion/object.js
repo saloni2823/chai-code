@@ -291,7 +291,7 @@ console.log(undefined + 1); // NaN because undefined is converted to NaN and the
 //6. undefined
 //7. symbol
 
-//non-primitive data types:
+//non-primitive data types,
 //1. object
 //object types:
 //1. object literal {}
