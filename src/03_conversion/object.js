@@ -280,4 +280,5 @@ console.log(true + true); // 2 because true is converted to 1 and then addition 
 console.log(false + true); // 1 because false is converted to 0 and true to 1, then addition is performed
 console.log(false - true); // -1 because false is converted to 0 and true to 1, then subtraction is performed
 console.log(null + 1); // 1 because null is converted to 0 and then addition is performed
-console.log(undefined + 1); // NaN because undefined is converted to NaN and then addition is performed     
+console.log(undefined + 1); // NaN because undefined is converted to NaN and then addition is performed                 
+//These examples illustrate JavaScript's type coercion and operator behavior in various scenarios.
