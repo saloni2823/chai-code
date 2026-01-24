@@ -273,3 +273,9 @@ console.log([] + []); // "" (empty string) because both arrays are converted to 
 console.log([] + {}); // "[object Object]" because the empty array is converted to an empty string and the object to "[object Object]"
 console.log({} + []); // 0 because the empty object is treated as a block and the empty array is converted to 0
 console.log("5" - 2); // 3 because the string "5" is converted to number 5 and then subtraction is performed
+console.log("5" + 2); // "52" because the number 2 is converted to string and concatenated
+console.log("5" * "2"); // 10 because both strings are converted to numbers and multiplication is performed
+console.log("5" / "2"); // 2.5 because both strings are converted to numbers and division is performed
+console.log(true + true); // 2 because true is converted to 1 and then addition is performed
+console.log(false + true); // 1 because false is converted to 0 and true to 1, then addition is performed
+console.log(false - true); // -1 because false is converted to 0 and true to 1, then subtraction is performed
