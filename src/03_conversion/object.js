@@ -265,6 +265,8 @@ console.log(Boolean(false))// false
 //Falsy values in JavaScript include 0, "", null, undefined, NaN, and false
 //Truthy values in JavaScript include all values that are not falsy 
 //Understanding operators and type coercion is important for writing correct and efficient JavaScript code
+
+
 ///Intefview Question: What will be the output of the following code snippets?
 console.log(0.1 + 0.2 == 0.3); // false due to floating-point precision issues
 console.log([] + []); // "" (empty string) because both arrays are converted to strings and concatenated
