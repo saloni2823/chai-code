@@ -424,3 +424,6 @@ console.log(person.email);//
 //3. Memory allocation and deallocation is managed by the garbage collector.
 //4. Heap memory is slower to access compared to stack memory.
 //5. The size of heap memory is larger and can grow as needed during runtime.
+
+//Example:
+let num=10;
