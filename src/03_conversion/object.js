@@ -426,4 +426,4 @@ console.log(person.email);//
 //5. The size of heap memory is larger and can grow as needed during runtime.
 
 //Example:
-let num=10;
+let myYoub
