@@ -429,4 +429,5 @@ console.log(person.email);//
 let myYutybeName="saloni";//stored in stack memory
 
 
-let anothername=
+let anothername=myYutybeName;//stored in stack memory
+console.log(anothername);//saloni   
