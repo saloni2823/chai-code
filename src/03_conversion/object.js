@@ -408,3 +408,4 @@ person.age=30;//will change
 delete person.email;//will not delete
 console.log(person.age);//30
 console.log(person.email);//        
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
