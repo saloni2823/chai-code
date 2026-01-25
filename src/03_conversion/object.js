@@ -410,4 +410,17 @@ console.log(person.age);//30
 console.log(person.email);//        
 
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-//stack mem
+//stack memory vs heap memory
+//Stack Memory:
+//1. Stack memory is used for static memory allocation.
+//2. It stores primitive data types (number, string, boolean, null, undefined, symbol).
+//3. Memory allocation and deallocation is done automatically in a LIFO (Last In First Out) manner.
+//4. Stack memory is faster to access compared to heap memory.
+//5. The size of stack memory is limited and usually smaller than heap memory.
+
+//Heap Memory:
+//1. Heap memory is used for dynamic memory allocation.
+//2. It stores reference data types (objects, arrays, functions).
+//3. Memory allocation and deallocation is managed by the garbage collector.
+//4. Heap memory is slower to access compared to stack memory.
+//5. The size of heap memory is larger and can grow as needed during runtime.
