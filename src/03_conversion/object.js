@@ -228,6 +228,7 @@ console.log(Boolean(""))// it will show false because empty string is converted 
 console.log(Boolean(null))// it will show false because null is converted to boolean using Boolean() function
 console.log(Boolean(undefined))// it will show false because undefined is converted to boolean using Boolean() function
 console.log(Boolean(NaN))// it will show false because NaN is converted to boolean using Boolean() function
+
 //***********Falsy Values in JavaScript**********//
 //The following values are considered falsy in JavaScript:
 console.log(Boolean(0))// false
@@ -236,12 +237,14 @@ console.log(Boolean(null))// false
 console.log(Boolean(undefined))// false
 console.log(Boolean(NaN))// false
 console.log(Boolean(false))// false
+
 //All other values are considered truthy
 console.log(Boolean(1))// true
 console.log(Boolean("saloni"))// true
 console.log(Boolean([]))// true
 console.log(Boolean({}))// true
 console.log(Boolean(function(){}))// true
+
 //***********Truthy Values in JavaScript**********//
 //The following values are considered truthy in JavaScript:
 console.log(Boolean(1))// true  
@@ -249,16 +252,18 @@ console.log(Boolean(-1))// true
 console.log(Boolean("saloni"))// true
 console.log(Boolean([]))// true
 console.log(Boolean({}))// true 
-console.log(Boolean(function(){}))// true       
-//All other values are considered falsy
+console.log(Boolean(function(){}))// true   
+
+                                                     //All other values are considered falsy
 console.log(Boolean(0))// false
 console.log(Boolean(""))// false
 console.log(Boolean(null))// false
 console.log(Boolean(undefined))// false
 console.log(Boolean(NaN))// false
 console.log(Boolean(false))// false
-//***********Summary**********//
 
+
+                                                     //***********Summary**********//
 //JavaScript has various operators that can be used to perform operations on values
 //Operators have different precedence and associativity which determines the order of evaluation
 //Type coercion occurs when operators are applied to values of different types
@@ -303,6 +308,103 @@ console.log(undefined + 1); // NaN because undefined is converted to NaN and the
 //7. set new Set()
 //8. weakmap new WeakMap()
 //9. weakset new WeakSet()
+//**********JS Comparison Operators**********//
 console.log(2+2==4)// it will show true because 2+2=4 and then 4==4 is true
 console.log(2+2===4)// it will show true because 2+2=4 and then 4===4 is true
 console.log(2+2=="4")// it will show true because 2+2=4 and then 4=="4" is true (string is converted to number)
+//**********JS Objects**********//important 
+let person={
+    name:"saloni",
+    age:22,
+    isStudent:true,
+    hobbies:["reading","coding","music"],
+    address:{
+        street:"123 Main St",
+        city:"Ahmedabad",
+        state:"Gujarat"
+    },
+    greet:function(){
+        console.log("Hello, my name is " + this.name);
+    }
+};
+console.log(person.name);//accessing property using dot notation
+console.log(person["age"]);//accessing property using bracket notation
+person.greet();//calling method of object
+// wjat is object in js ?
+//An object is a collection of key-value pairs where keys are strings (or symbols) and values can be of any data type including other objects.
+//Creating an object
+let car={
+    make:"Toyota",
+    model:"Camry",
+    year:2020,
+    start:function(){
+        console.log("Car started");
+    }
+};
+console.log(car.make);//Toyota
+console.log(car["model"]);//Camry
+car.start();//Car started
+
+//Adding new property to object
+person.email="saloni@example.com";  
+console.log(person.email);
+
+//Modifying existing property of object
+person.age=23;
+console.log(person.age);
+
+//Deleting property from object
+delete person.isStudent;
+console.log(person.isStudent);//undefined
+
+//Iterating over properties of object
+for(let key in person){
+    console.log(key + ": " + person[key]);
+}
+
+//Object methods
+console.log(Object.keys(person));//returns array of keys
+console.log(Object.values(person));//returns array of values
+console.log(Object.entries(person));//returns array of [key,value] pairs
+
+//Nested object access
+console.log(person.address.city);//Ahmedabad
+
+//Array of objects
+let students=[
+    {name:"saloni",age:22},
+    {name:"john",age:23},
+    {name:"alice",age:21}
+];
+console.log(students[0].name);//saloni
+
+//Object destructuring
+let {name,age}=person;
+console.log(name);//saloni
+console.log(age);//23
+
+//Spread operator with objects
+let person2={...person};
+console.log(person2);
+
+//Object.assign()
+let person3=Object.assign({},person);
+console.log(person3);
+
+//JSON.stringify() and JSON.parse()
+let personJSON=JSON.stringify(person);
+console.log(personJSON);
+let personObj=JSON.parse(personJSON);
+console.log(personObj);
+
+//Object.freeze()
+Object.freeze(person);
+person.name="new name";//will not change
+console.log(person.name);//saloni
+
+//Object.seal()
+Object.seal(person);
+person.age=30;//will change
+delete person.email;//will not delete
+console.log(person.age);//30
+console.log(person.email);//        
