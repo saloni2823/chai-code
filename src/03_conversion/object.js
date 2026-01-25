@@ -427,3 +427,6 @@ console.log(person.email);//
 
 //Example:
 let myYutybeName="saloni";//stored in stack memory
+
+
+let anothername=
